@@ -4,6 +4,11 @@ print(__doc__)
 # Code source: Jaques Grobler
 # License: BSD 3 clause
 
+import warnings
+warnings.filterwarnings(action="ignore", module="scipy", message="^internal gelsd")
+
+import matplotlib
+matplotlib.use('TkAgg')
 
 import matplotlib.pyplot as plt
 import numpy as np
